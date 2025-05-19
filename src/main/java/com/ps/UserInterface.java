@@ -91,7 +91,7 @@ public class UserInterface {
         scanner.nextLine();
 
         if(sellOrLeaseCommand ==1) {
-            System.out.println("\n--------Sell vehicle--------\n");
+            System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA + "--------Sell vehicle--------" + Ansi.RESET + "\n");
 
             System.out.print("Date (yyyymmdd): ");
             String date = scanner.nextLine();
@@ -137,7 +137,7 @@ public class UserInterface {
 
         }
         else if (sellOrLeaseCommand ==2){
-            System.out.println("\n--------Lease vehicle--------\n");
+            System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA + "--------Lease vehicle--------" + Ansi.RESET + "\n");
 
             System.out.print("Date (yyyymmdd): ");
             String date = scanner.nextLine();
@@ -182,7 +182,7 @@ public class UserInterface {
     }
 
     private void processGetByPriceRequest() {
-        System.out.println("\n--------Display vehicles by price--------\n");
+        System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA + "--------Display vehicles by price--------" + Ansi.RESET + "\n");
         System.out.print("Min: ");
         double min = scanner.nextDouble();
 
@@ -199,7 +199,7 @@ public class UserInterface {
     }
 
     private void processGetByMakeModelRequest() {
-        System.out.println("\n--------Display vehicles by make and model--------\n");
+        System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA + "--------Display vehicles by make and model--------" + Ansi.RESET + "\n");
         scanner.nextLine();
         System.out.print("Make: ");
         String make = scanner.nextLine();
@@ -215,7 +215,7 @@ public class UserInterface {
     }
 
     private void processGetByYearRequest() {
-        System.out.println("\n--------Display vehicles by year--------\n");
+        System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA + "--------Display vehicles by year--------" + Ansi.RESET + "\n");
         System.out.print("Min: ");
         int min = scanner.nextInt();
 
@@ -230,7 +230,7 @@ public class UserInterface {
     }
 
     private void processGetByColorRequest() {
-        System.out.println("\n--------Display vehicles by color--------\n");
+        System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA + "--------Display vehicles by color--------" + Ansi.RESET + "\n");
         scanner.nextLine();
         System.out.print("Color: ");
         String color = scanner.nextLine();
@@ -242,7 +242,7 @@ public class UserInterface {
     }
 
     private void processGetByMileageRequest() {
-        System.out.println("\n--------Display vehicles by mileage--------\n");
+        System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA + "--------Display vehicles by mileage--------" + Ansi.RESET + "\n");
         System.out.print("Min: ");
         int min = scanner.nextInt();
 
@@ -257,7 +257,7 @@ public class UserInterface {
     }
 
     private void processGetByVehicleTypeRequest() {
-        System.out.println("\n--------Display vehicles by type--------\n");
+        System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA + "--------Display vehicles by type--------" + Ansi.RESET + "\n");
         scanner.nextLine();
         System.out.print("Car, truck, SUV, or van? ");
         String type = scanner.nextLine();
@@ -271,14 +271,14 @@ public class UserInterface {
 
     private void processGetAllVehiclesRequest(){
         ArrayList<Vehicle> vehicles = dealership.getAllVehicles();
-        System.out.println("\n---------Printing all vehicles-----------\n");
+        System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA + "---------Printing all vehicles-----------" + Ansi.RESET + "\n");
 
         System.out.println("vin, year, make, model, type, color, odometer, price");
 
         displayVehicles(vehicles);
     }
     private void processAddVehicleRequest(){
-        System.out.println("\n---------Add a vehicle----------\n");
+        System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA +  "---------Add a vehicle----------" + Ansi.RESET + "\n");
         scanner.nextLine();
 
         System.out.print("VIN: ");
@@ -349,7 +349,7 @@ public class UserInterface {
     }
 
     private void processRemoveVehicleRequest(){
-        System.out.println("\n---------Remove a vehicle----------\n");
+        System.out.println("\n" +  Ansi.ANSI_BRIGHT_MAGENTA +  "---------Remove a vehicle----------" + Ansi.RESET + "\n");
         scanner.nextLine();
 
         System.out.print("VIN: ");
