@@ -1,6 +1,7 @@
 package com.ps;
 
 public class SalesContract extends Contract{
+
     private double salesTaxAmount;
     private double recordingFee ;
     private double processingFee;
@@ -14,6 +15,7 @@ public class SalesContract extends Contract{
     }
 
     public double getSalesTaxAmount(){
+
         double salesTaxRate = 0.05;
         double vehiclePrice = getVehicleSold().getPrice();
         salesTaxAmount = salesTaxRate * vehiclePrice;
@@ -26,6 +28,7 @@ public class SalesContract extends Contract{
     }
 
     public double getRecordingFee(){
+
         recordingFee =100;
         return recordingFee;
     }
@@ -82,11 +85,13 @@ public class SalesContract extends Contract{
         if(isFinanced) {
 
             if (vehiclePrice >= 10000) {
+
                 rate = 0.0425 / 12;
                 months = 48;
             }
 
             else {
+
                 rate = 0.0525/12;
                 months =24;
             }
