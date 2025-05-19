@@ -17,8 +17,7 @@ An updated program that keeps track of the dealership's inventory, and allows th
 ----------------------------
 
 ## Home Screen
-![Screenshot 2025-05-11 212958.png](Screenshot%202025-05-11%20212958.png)
-
+![Screenshot 2025-05-18 215717.png](Screenshot%202025-05-18%20215717.png)
 
 ## Display Screen
 ![Screenshot 2025-05-11 213024.png](Screenshot%202025-05-11%20213024.png)
