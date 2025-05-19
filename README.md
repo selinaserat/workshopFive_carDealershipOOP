@@ -1,5 +1,5 @@
 # Car Dealership
-A program that keeps track of the dealership's inventory.
+An updated program that keeps track of the dealership's inventory, and allows the user to sell or lease vehicles, all while utilizing abstraction.
 
 -------------------------
 ## Features
@@ -12,6 +12,8 @@ A program that keeps track of the dealership's inventory.
 - List all vehicles
 - Add a vehicle
 - Remove a vehicle
+- Sell a vehicle
+- Lease a vehicle
 ----------------------------
 
 ## Home Screen
